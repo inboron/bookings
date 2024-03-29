@@ -25,70 +25,88 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #2facff;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Rooms
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/rooms/general-quarters">General's Quarters</a></li>
+                            <li><a class="dropdown-item" href="/rooms/major-suite">Major's Suite</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/make-reservation" tabinex="-1" aria-disabled="true">Book now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" tabinex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Rooms
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">General's Quarters</a>
-          <a class="dropdown-item" href="#">Major's Suite</a>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/woman-laptop.png" class="d-block w-100" alt="Woman and laptop">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>     
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tray.png" class="d-block w-100" alt="Tray with coffee">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img src="images/outside.png" class="d-block w-100" alt="Outside">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-      
-    </ul>
-  </div>
-</nav>
 
 
-    <div id="main-carousel" class="carousel slide" data-ride="carousel">
 
-        <ol class="carousel-indicators">
-            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#main-carousel" data-slide-to="1"></li>
-            <li data-target="#main-carousel" data-slide-to="2"></li>
-        </ol>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="static/images/woman-laptop.png" class="d-block w-100" alt="Woman and laptop">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="static/images/tray.png" class="d-block w-100" alt="Tray with coffee">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="static/images/outside.png" class="d-block w-100" alt="Outside">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -104,15 +122,8 @@
                 </p>
             </div>
         </div>
-
-
-        <div class="row">
-
-            <div class="col text-center">
-
-                <a href="/search-availability" class="btn btn-success">Make Reservation Now</a>
-
-            </div>
+        <div class="col text-center">
+            <button type="button" class="btn btn-success">Make Rreservation Now</button>
         </div>
 
     </div>
